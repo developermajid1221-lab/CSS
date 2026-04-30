@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: url('project/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    color: #0b3d91;
+}
+
+/* Form layout */
+.form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group div {
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Profile image */
+.right-img {
+    float: right;
+    margin-top: -80px;
+}
+
+/* Button */
+.submit-btn {
+    background-color: #0b3d91;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #092d6b;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="center">
+    <h1>University of Engineering and Technology</h1>
+    <img src="uet logo.png" alt="UET Logo" width="100">
+    <h2>Admission Form</h2>
+</div>
+
+<form action="#" method="POST">
+
+<h3>Personal Information</h3>
+
+<label>Profile Picture:</label>
+<input type="file" accept="image/*">
+
+<div class="form-group">
+    <div>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+        <label>Father Name:</label>
+        <input type="text" name="father" placeholder="Enter your Father name">
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your Email">
+    </div>
+    <div>
+        <label>Phone:</label>
+        <input type="tel" name="phone" placeholder="+92 3xx xxxxxxx" required>
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+    </div>
+    <div>
+        <label>Nationality</label>
+        <input type="text" name="nationality" required>
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+    </div>
+</div>
+
+<hr>
+
+<h3>Address</h3>
+
+<div class="form-group">
+    <div>
+        <label>Country</label>
+        <select name="country" required>
+            <option value="">Select Country</option>
+            <option>Pakistan</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>China</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Province</label>
+        <select name="province" required>
+            <option value="">Select Province</option>
+            <option>Punjab</option>
+            <option>Sindh</option>
+            <option>KPK</option>
+            <option>Balochistan</option>
+            <option>Gilgit Baltistan</option>
+             <option>Andhra Pradesh</option>
+                    <option>Anunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab (India)</option>
+                    <option>Rajasthan</option> 
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option> 
+                    <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+                    <option>Delaware</option>
+                    <option>Florida</option>
+                    <option>Georgia</option>
+                    <option>Hawaii</option>
+                    <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option>Iowa</option>
+                    <option>Kansas</option>
+                    <option>Kentucky</option>
+                    <option>Louisiana</option>
+                    <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusetts</option>
+                    <option>Michigan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>Montana</option>
+                    <option>Nebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+                    <option>Ohio</option>
+                    <option>Oklahoma</option>
+                    <option>Oregon</option>
+                    <option>Pennsylvania</option>
+                    <option>Rhode Island</option>
+                    <option>South Carolina</option>
+                    <option>South Dakota</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Vermont</option>
+                    <option>Virginia</option>
+                    <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option>Wyoming</option>
+                    <option>Northland</option>
+                    <option>Auckland</option>
+                    <option>Waikato</option>
+                    <option>Bay of Plenty</option>
+                    <option>Gisborne</option>
+                    <option>Hawke’s Bay</option>
+                    <option>Taranaki</option>
+                    <option>Manawatū-Whanganui</option>
+                    <option>Wellington</option>
+                    <option>Tasman</option>
+                    <option>Nelson</option>
+                    <option>Marlborough</option>
+                    <option>West Coast</option>
+                    <option>Canterbury</option>
+                    <option>Otago</option>
+                    <option>Southland</option>
+                    <option>Anhui</option>
+                    <option>Fujian</option>
+                    <option>Gansu</option>
+                    <option>Guangdong</option>
+                    <option>Guizhou</option>
+                    <option>Hainan</option>
+                    <option>Hebei</option>
+                    <option>Heilongjiang</option>
+                    <option>Henan</option>
+                    <option>Hubei</option>
+                    <option>Hunan</option>
+                    <option>Jiangsu</option>
+                    <option>Jiangxi</option>
+                    <option>Jilin</option>
+                    <option>Liaoning</option>
+                    <option>Qinghai</option>
+                    <option>Shaanxi</option>
+                    <option>Shandong</option>
+                    <option>Shanxi</option>
+                    <option>Sichuan</option>
+                    <option>Yunnan</option>
+                    <option>Zhejiang</option>
+                    <option>Taiwan</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>City</label>
+        <select name="city" required>
+            <option value="">Select City</option>
+            <option>Islamabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+            <option>Peshawar</option>
+            <option>Quetta</option>
+              <option>Multan</option>
+                    <option>Gujranwala</option>
+                    <option>Sialkot</option>
+                    <option>Bahawalpur</option>
+                    <option>Sargodha</option>
+                    <option>Sheikhupura</option>
+                    <option>Jhelum</option>
+                   
+                     <option>Hyderabad(Pakistan)</option>
+                    <option>Sukkur</option>
+                    <option>Larkana</option>
+                    <option>Nawabshah</option>
+                    <option>Mirpur Khas</option>
+                    <option>Jacobabad</option>
+                
+                    <option>Mardan</option>
+                    <option>Abbottabad</option>
+                    <option>Mingora</option>
+                    <option>Kohat</option>
+                     <option>Dera Ismail Khan</option>
+                    <option>Bannu</option>
+                    <option>Quetta</option>
+                    <option>Turbat</option>
+                    <option>Khuzdar</option>
+                    <option>Gwadar</option>
+                    <option>Sibi</option>
+                    <option>Gilgit</option>
+                    <option>Skardu</option>
+                    <option>Muzaffarabad</option>
+                    <option>Mirpur</option>
+                    <option>Mumbai</option>
+                     <option>Delhi</option>
+                    <option>Bengaluru</option>
+                    <option>Hyderabad(India)
+                    </option>
+                    <option>Chennai</option>
+                    <option>Kolkata</option>
+                    <option>Pune</option>
+                    <option>Ahmedabad</option>
+                    <option>Jaipur</option>
+                    <option>Lucknow</option>
+                    <option>New York city</option>
+                    <option>los Angeles</option>
+                      <option>Chicago</option>
+                    <option>Houston</option>
+                    <option>Phoenix</option>
+                    <option>Philadelphia</option>
+                    <option>San Antoion</option>
+                    <option>San Diego</option>
+                    <option>Dallas</option>
+                    <option>Miami</option>
+                    <option>Auckland</option>
+                    <option>Wellington</option>
+                    <option>Christchurch</option>
+                      <option>Hamilton</option>
+                    <option>Tauranga</option>
+                    <option>Dunedin</option>
+                    <option>Palmerston North</option>
+                    <option>Napier</option>
+                    <option>Nelson</option>
+                    <option>Rotorua</option>
+                    <option>Beijing</option>
+                    <option>Shanghai</option>
+                    <option>Guangzhou</option>
+                    <option>Shenzhen</option>
+                      <option>Chengdu</option>
+                    <option>Wuhan</option>
+                    <option>Hangzhou</option>
+                    <option>Nanjing</option>
+                    <option>Xi'an</option>
+                    <option>Tianjin</option>
+                   
+            
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>Home Address</label>
+        <input type="text" name="address" required>
+    </div>
+    <div>
+        <label>Postal Code</label>
+        <input type="number" name="postal" required>
+    </div>
+</div>
+
+<hr>
+
+<h3>Academic Information</h3>
+
+<div class="form-group">
+    <div>
+        <label>Previous School/College</label>
+        <input type="text" name="school" required>
+    </div>
+    <div>
+        <label>Year of Passing</label>
+        <input type="number" name="year" required>
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>Marks</label>
+        <input type="number" name="marks" required>
+    </div>
+    <div>
+        <label>Stream</label>
+        <select name="stream">
+            <option>Science</option>
+            <option>Arts</option>
+        </select>
+    </div>
+</div>
+
+<hr>
+
+<h3>Program Selection</h3>
+
+<div class="form-group">
+    <div>
+        <label>Level</label>
+        <select name="level">
+            <option>Undergraduate</option>
+            <option>Graduate</option>
+            <option>Postgraduate</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Faculty</label>
+        <select name="faculty">
+            <option>Science</option>
+            <option>IT</option>
+            <option>Engineering</option>
+            <option>Medical</option>
+            <option>Business</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>Program</label>
+        <select name="program">
+                    <option>Select Program</option>
+                    <option>Computer Science</option>
+                    <option>Software Engineering</option>
+                    <option>Cyber Security</option>
+                    <option>Artificial Intelligence</option>
+                    <option>Data Science</option>
+                    <option>Mathematics</option>
+                    <option>Physics</option>
+                    <option>Chemistry</option>
+                    <option>Information Technology</option>
+                    <option>Civil Engineering</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Chemical Engineering</option>
+                    <option>Electrical Engineering</option>
+                    <option>Pharmacy</option>
+                    <option>Nursing</option>
+                    <option>Dentistry</option>
+                    <option>Public Health</option>
+                    <option>Medicine(MBBS)</option>
+                    <option>Business Administration(BBA)</option>
+        </select>
+    </div>
+</div>
+
+<hr>
+
+<h3>Entry Test</h3>
+
+<div class="form-group">
+    <div>
+        <label>Test Type</label>
+        <select name="test">
+            <option>ECAT</option>
+            <option>MDCAT</option>
+            <option>NTS</option>
+        </select>
+    </div>
+    <div>
+        <label>Roll No</label>
+        <input type="text" name="roll" required>
+    </div>
+</div>
+
+<div class="form-group">
+    <div>
+        <label>Test Score</label>
+        <input type="number" name="score" required>
+    </div>
+    <div>
+        <label>Test Date</label>
+        <input type="date" name="testdate" required>
+    </div>
+</div>
+
+<div class="center">
+    <button type="submit" class="submit-btn">Submit Application</button>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
